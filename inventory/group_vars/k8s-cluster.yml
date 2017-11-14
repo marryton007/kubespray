@@ -149,13 +149,13 @@ dashboard_enabled: true
 efk_enabled: false
 
 # Helm deployment
-helm_enabled: false
+helm_enabled: true
 
 # Istio depoyment
 istio_enabled: false
 
 # Make a copy of kubeconfig on the host that runs Ansible in GITDIR/artifacts
-# kubeconfig_localhost: false
+kubeconfig_localhost: true
 # Download kubectl onto the host that runs Ansible in GITDIR/artifacts
 # kubectl_localhost: false
 

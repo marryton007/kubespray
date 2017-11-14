@@ -33,6 +33,7 @@
 
 - name: Helm | Install/upgrade helm
   command: "{{ bin_dir }}/helm init --upgrade --tiller-image={{ tiller_image_repo }}:{{ tiller_image_tag }}"
+  ignore_errors: true
   when: helm_container.changed
 
 - name: Helm | Patch tiller deployment for RBAC
