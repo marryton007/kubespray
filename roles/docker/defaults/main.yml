@@ -1,5 +1,5 @@
 ---
-docker_version: 'stable'
+docker_version: 'latest'
 
 docker_package_info:
   pkgs:
